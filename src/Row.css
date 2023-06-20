@@ -1,0 +1,27 @@
+.row{
+    margin: 20px;
+    color: white ;
+}
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding:20px;   
+}
+.row__posters::-webkit-scrollbar{
+    display: none;
+}    
+.row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin : 10px;
+    transition: transform 450ms; /*slight delay in transition i.e - image grows slowly occurs due to this */
+}
+.row__posterLarge{
+    max-height: 250px;
+}
+.row__poster:hover{
+        transform: scale(1.09);/*grows in size when mouse pointer hovers*/
+        
+}
